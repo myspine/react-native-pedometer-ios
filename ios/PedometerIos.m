@@ -1,14 +1,9 @@
-// #import <React/RCTBridgeModule.h>
-
-// @interface PedometerIos : NSObject <RCTBridgeModule>
-
-// @end
 //
 //  PedometerIos.m
 //  PedometerIos
 //
-//  Created by gaurav chaware on 02/04/2016.
-//  Copyright © 2020 galmis. All rights reserved.
+//  Created by Nam Tran on 03/02/2021.
+//  Copyright © 2021 nhtranngoc. All rights reserved.
 //
 
 #import "PedometerIos.h"
