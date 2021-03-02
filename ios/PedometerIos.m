@@ -46,16 +46,21 @@ RCT_EXPORT_METHOD(isDistanceAvailable:(RCTResponseSenderBlock) callback) {
 }
 
 RCT_EXPORT_METHOD(isCadenceAvailable:(RCTResponseSenderBlock) callback) {
-  callback(@[NullErr, @([CMPedometer isCadenceAvailable])]);
+    callback(@[[NSNull null], @([CMPedometer isCadenceAvailable])]);
 }
 
 RCT_EXPORT_METHOD(isPaceAvailable:(RCTResponseSenderBlock) callback) {
-  callback(@[NullErr, @([CMPedometer isPaceAvailable])]);
+    callback(@[[NSNull null], @([CMPedometer isPaceAvailable])]);
 }
 
 RCT_EXPORT_METHOD(isPedometerEventTrackingAvailable:(RCTResponseSenderBlock) callback) {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 100000
+    if (@available(iOS 10.0, *)) {
         callback(@[[NSNull null], @([CMPedometer isPedometerEventTrackingAvailable])]);
+    } else {
+        // Fallback on earlier versions
+        callback(@[@"not available", @(NO)]);
+    }
 #else
         callback(@[@"not available", @(NO)]);
 #endif
@@ -96,8 +101,8 @@ RCT_EXPORT_METHOD(startPedometerUpdatesFromDate:(NSDate *)date) {
              @"distance": data.distance?:[NSNull null],
              @"floorsAscended": data.floorsAscended?:[NSNull null],
              @"floorsDescended": data.floorsDescended?:[NSNull null],
-             @"currentPace": data.currentPace?:NullErr,
-             @"currentCadence": data.currentCadence?:NullErr,
+             @"currentPace": data.currentPace?:[NSNull null],
+             @"currentCadence": data.currentCadence?:[NSNull null],
              };
 }
 
