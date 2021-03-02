@@ -9,6 +9,7 @@ React Native pedometer for versions >=0.60 updated for pod support. The module i
 ### Mostly automatic installation
 
 `$ react-native link react-native-pedometer-ios`
+`$ cd ios && pod install`
 
 ## Usage
 ```javascript
