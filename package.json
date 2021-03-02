@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gauravchaware/react-native-pedometer-ios.git",
-    "baseUrl": "https://github.com/gauravchaware/react-native-pedometer-ios"
+    "url": "git+https://github.com/nhtranngoc/react-native-pedometer-ios.git",
+    "baseUrl": "https://github.com/nhtranngoc/react-native-pedometer-ios"
   },
   "keywords": [
     "react-native"
   ],
   "author": {
-    "name": "Gaurav Chaware",
-    "email": "gauravchaware214@gmail.com"
+    "name": "Nam Tran",
+    "email": "nam@namfromnam.com"
   },
   "license": "MIT",
   "licenseFilename": "LICENSE",
