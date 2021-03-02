@@ -8,14 +8,14 @@ Pod::Spec.new do |s|
   s.summary      = package["description"]
   s.description  = <<-DESC
                   react-native-pedometer-ios
-                  Updated version of react-native-pedometer for react-native >=0.60.
+                  Updated version of react-native-pedometer for react-native >=0.60, complete with cadence integration.
                    DESC
-  s.homepage     = "https://github.com/gauravchaware/react-native-pedometer-ios"
+  s.homepage     = "https://github.com/nhtranngoc/react-native-pedometer-ios"
   s.license      = "MIT"
   # s.license    = { :type => "MIT", :file => "FILE_LICENSE" }
-  s.authors      = { "Your Name" => "gauravchaware214@gmail.com" }
+  s.authors      = { "Your Name" => "nam@namfromnam.com" }
   s.platforms    = { :ios => "9.0" }
-  s.source       = { :git => "https://github.com/gauravchaware/react-native-pedometer-ios.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/nhtranngoc/react-native-pedometer-ios.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,swift}"
   s.requires_arc = true
