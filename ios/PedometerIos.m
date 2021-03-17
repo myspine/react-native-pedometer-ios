@@ -28,6 +28,11 @@ RCT_EXPORT_MODULE();
     return @[@"pedometerDataDidUpdate"];
 }
 
++ (BOOL)requiresMainQueueSetup
+{
+  return NO; // Module does not require UIKit
+}
+
 RCT_EXPORT_METHOD(isStepCountingAvailable:(RCTResponseSenderBlock) callback) {
     callback(@[[NSNull null], @([CMPedometer isStepCountingAvailable])]);
 }
