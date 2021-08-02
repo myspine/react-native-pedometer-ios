@@ -101,7 +101,7 @@ RCT_EXPORT_METHOD(startPedometerUpdatesFromDate:(NSDate *)date) {
              @"distance": data.distance?:[NSNull null],
              @"floorsAscended": data.floorsAscended?:[NSNull null],
              @"floorsDescended": data.floorsDescended?:[NSNull null],
-             @"currentPace": data.currentPace?:[NSNull null],
+             @"averageActivePace": data.averageActivePace?:[NSNull null],
              @"currentCadence": data.currentCadence?:[NSNull null],
              };
 }
